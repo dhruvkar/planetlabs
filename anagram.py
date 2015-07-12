@@ -1,4 +1,6 @@
+from __future__ import print_function
 from collections import defaultdict
+
 
 # Open file and add >=4 letter words to a set while stripping newline chars and making lowercase
 with open("words.txt") as f:
@@ -18,9 +20,10 @@ d = defaultdict(list)
 	
 # Check length and print the ones where the length of the word matches the number of anagrams
 
-for k, v in d.iteritems():
-	if len(k) <= len(v):
-		print v
+#for k, v in d.iteritems():
+#	if len(k) <= len(v):
+#		print v
 
+[print(v) for k,v in d.iteritems() if len(k) <= len(v)]
 
 
