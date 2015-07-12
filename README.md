@@ -7,5 +7,6 @@ Find all of the anagrams in a dictionary in which there are at least 4 letters i
 **words.txt** is the full dictionary file, copied from */usr/share/dict/words* on my macbook.
 
 To run, copy at least **words.txt** and **anagram.py** to the same folder locally. 
-Then run the following in terminal:
+Then run the following in the terminal:
+
 `python anagram.py`
