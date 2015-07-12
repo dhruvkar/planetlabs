@@ -9,9 +9,11 @@ with open("words.txt") as f:
 d = defaultdict(list)
 
 # Create a dict with the sorted word as key and all its anagrams as the values
-for word in words:
-	if "".join(sorted(word)) in sorted_words:
-		d["".join(sorted(word))].append(word)
+#for word in words:
+#	if "".join(sorted(word)) in sorted_words:
+#		d["".join(sorted(word))].append(word)
+
+[d["".join(sorted(word))].append(word) for word in words if "".join(sorted(word)) in sorted_words]
 
 	
 # Check length and print the ones where the length of the word matches the number of anagrams
